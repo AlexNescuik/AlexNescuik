@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 453214498}
   - component: {fileID: 453214500}
   - component: {fileID: 453214501}
+  - component: {fileID: 453214502}
   m_Layer: 0
   m_Name: Pelota kirby
   m_TagString: Untagged
@@ -579,6 +580,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.09543458}
   serializedVersion: 2
   m_Radius: 1.3627957
+--- !u!114 &453214502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453214497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16753a441a7a2f4ab4c20197dd636e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuerzaSalto: 8
+  Pelota: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +648,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10.101372
+  orthographic size: 18.028502
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
