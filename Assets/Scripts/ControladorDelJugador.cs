@@ -6,6 +6,8 @@ public class ControladorDelJugador : MonoBehaviour
 {
     //parametro de fuerza con la que salta la pelota
     public float fuerzaSalto = 5;
+    public float mantequilla = 2;
+    public float cottage = -2;
     //referencia al componente rigid body
     private Rigidbody2D miCuerpo;
     public Transform Pelota;
@@ -27,6 +29,19 @@ public class ControladorDelJugador : MonoBehaviour
                 new Vector3(0, fuerzaSalto, 0),
                 ForceMode2D.Impulse);
         }
+        if (Input.GetButton("Fire2"))
+        {
+            print("Me quiero mover a la derecha");
+            miCuerpo.AddForce(new Vector3(mantequilla, 0, 0), ForceMode2D.Force);
+        }
+        if (Input.GetButton("Fire1"))
+        {
+            print("Me quiero mover a la izquierda");
+            miCuerpo.AddForce(new Vector3(cottage, 0, 0), ForceMode2D.Force);
+        }
+
     }
+
+
 
 }
